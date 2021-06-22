@@ -41,4 +41,11 @@ public class ProdutoTest {
         assertThat(livro, instanceOf(Produto.class));
     }
 
+    @Test
+    public void testEquals() {
+        Produto bicicleta = new Produto("Bike", 200);
+        //assert gerando resultado falso de propósito somente para testar o assertTrue()
+        assertTrue(livro.equals(bicicleta));
+    }
+
 }
